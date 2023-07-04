@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/component.css">
+    <link rel="stylesheet" href="./src/styles/login.css">
+    <title>Rede Social</title>
+</head>
+<header class="flex">
+    <nav class="navbar flex2">
+        <div class="flex3 padding1 button-default">
+            <p class="logo">TechPosters</p>
+        </div>
+        <div class="padding1 gap1 flex3">
+            <button class="button-login button-default">Login</button>
+            <button class="button-register button-default go-to-register">Registro</button>
+        </div>
+    </nav>
+</header>
+<body>
+   <main class="main">
+    <div class="modal-1">
+        <div class="div-modal-1">
+            <h4 class="title5">Acesso não autorizado</h4>
+            <p class="text5">Essa conta não existe, logo não pode acessar a página dos posts</p>
+            <div class="div-button1">
+                <button id="button-modal" class="button-default">Entendi</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="div-login" class="div-form">
+            <h2 class="title3">Login</h2>
+            <div>
+                <form class="form-1" action="submit">
+                    <input class="input2 size1" type="text" placeholder="Seu E-mail" >
+                    <input class="input2 size1" type="text" placeholder="Sua Senha" >
+                    <button class="button-primary title2 button-height button-default size1">Logar</button>
+                    <p class="title4">Ainda não possui cadastro</p>
+                </form>  
+                <div class="div-btn-register">
+                    <button id="registerbutton" class="go-to-register button-whitefixed size1 button-height button-default ">Ir para página de registro</button>
+                </div> 
+            </div>
+        </div>
+        <div id="div-register" class="div-form register">
+            <div class="title-register">
+                <h2 class="title3">Cadastro</h2>
+                <button id="btn-voltar"class="btn-voltar button-default">Voltar</button>
+            </div>
+            <div>
+                <form class="form-1" action="submit">
+                    <input class="input2 size1" type="text" placeholder="Seu Nome" >
+                    <input class="input2 size1" type="text" placeholder="Seu E-mail">
+                    <input class="input2 size1" type="text" placeholder="Sua Senha">
+                    <input class="input2 size1" type="text" placeholder="Qual seu trabalho?">
+                    <input class="input2 size1" type="text" placeholder="Url da imagem de perfil">
+                    <button class="button-primary title2 button-height button-default size1">Registrar</button>
+                    <p class="title4">Já possui login</p>
+                </form>  
+                <div class="div-btn-register">
+                    <button id="go-to-login-button" class="size1 button-whitefixed button-height button-default ">Ir para página de login</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+   </main> 
+   <script type="module" src="./src/scripts/index.js"></script>
+</body>
+</html>

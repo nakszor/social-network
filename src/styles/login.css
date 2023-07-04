@@ -1,0 +1,118 @@
+
+body{
+    background-color: var(--grey5);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    padding: 35px;
+}
+.div-form{
+    background-color: var(--white-fixed);
+    width: 250px;
+    height: max-content;
+    padding-bottom: 15px;
+    border-radius: 8px;
+}
+.form-1{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.input2{
+    border: solid 2px var(--grey5);
+    border-radius: 2px;
+    height: 32px;
+    padding: 10px;
+}
+.input2:focus{
+    outline: none !important;
+    border-color: var(--color-brand-2); 
+}
+.input2:hover{
+    outline: none !important;
+    border-color: var(--color-brand-2); 
+}
+.size1{
+    width: 90%;
+}
+.button-height{
+    height: 28px;
+}
+.div-btn-register{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.title3{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.register{
+    display: none;
+}
+.title-register{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+.btn-voltar{
+    width: 45px;
+    height: 27px;
+    background-color: var(--white-fixed);
+    border: solid 1px var(--grey0);
+}
+.modal-1{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1040;
+    background: rgba(0,0,0,0.8);
+    padding: 70px 20px;
+}
+.div-modal-1{
+    background-color: var(--color-brand-1);
+    border-radius: 4px;
+    color: var(--white-fixed);
+    height: max-content;
+    padding: 15px 15px;
+    max-width: 450px;
+}
+.div-button1{
+    display: flex;
+    justify-content: flex-end;
+}
+.div-button1 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+}
+.text5{
+    padding: 15px 0;
+    font-size: 12px;
+}
+.title5{
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+@media (min-width:768px){
+    .div-form{
+        width: 400px;
+        margin-top: 35px;
+    }.modal-1{
+       padding-top: 70vh;
+       padding-left: 60vw;
+    }
+}
